@@ -6,11 +6,6 @@ const R2LTags = info.querySelectorAll(".detail3, .infohead3")
 
 
 
-animationTags.forEach(tag =>{
-
-    tag.style.opacity = 0;
-
-})
 
 const interact = function(){
     
@@ -41,11 +36,7 @@ const interact = function(){
 
 }
 
-L2RTags.forEach(tag =>{
 
-    tag.style.opacity = 0;
-
-})
 
 const interact2 = function(){
     
@@ -76,11 +67,7 @@ const interact2 = function(){
 
 }
 
-R2LTags.forEach(tag =>{
 
-    tag.style.opacity = 0;
-
-})
 
 const interact3 = function(){
     
@@ -117,7 +104,6 @@ const interact3 = function(){
 
 const action = function(){
 
-
 const video = info.querySelector(".infofirst video");
 const videocon = info.querySelector(".infofirst");
 
@@ -130,6 +116,7 @@ const videoBottom = videocon.getBoundingClientRect().bottom;
 // console.log(windowHeight)
 
 // console.log(videoTop)
+
 if(videoTop < 0 || videoBottom >= window.innerHeight ){
   
     video.play()
