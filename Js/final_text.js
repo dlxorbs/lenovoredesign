@@ -4,12 +4,12 @@ const animationTags = info.querySelectorAll(".infohead , .detail , .infofirst ,.
 const L2RTags = info.querySelectorAll(".detail2, .infohead2")
 const R2LTags = info.querySelectorAll(".detail3, .infohead3")
 
-
+    let delay = 0.25;
 
 
 const interact = function(){
     
-    let delay = 0.25;
+
 
     animationTags.forEach(tag =>{
         const animationTop = tag.getBoundingClientRect().top;
@@ -40,7 +40,6 @@ const interact = function(){
 
 const interact2 = function(){
     
-    let delay = 0.1; 
 
     L2RTags.forEach(tag =>{
         const animationTop = tag.getBoundingClientRect().top;
@@ -71,7 +70,7 @@ const interact2 = function(){
 
 const interact3 = function(){
     
-    let delay = 0.1; 
+
 
     R2LTags.forEach(tag =>{
         const animationTop = tag.getBoundingClientRect().top;
