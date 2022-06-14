@@ -1,7 +1,6 @@
 const info = document.querySelector(".lenovoinfo")
 
 const animationTags = info.querySelectorAll(".infohead , .detail , .infofirst ,.infosec, .infothird , .infoforth");
-const pTags = info.querySelectorAll("p")
 const L2RTags = info.querySelectorAll(".detail2, .infohead2")
 const R2LTags = info.querySelectorAll(".detail3, .infohead3")
 
@@ -119,8 +118,8 @@ const interact3 = function(){
 const action = function(){
 
 
-const video = info.querySelector(".infofirst video")
-const videocon = info.querySelector(".infofirst")
+const video = info.querySelector(".infofirst video");
+const videocon = info.querySelector(".infofirst");
 
 const videoTop = videocon.getBoundingClientRect().top;
 const videoBottom = videocon.getBoundingClientRect().bottom;
@@ -134,25 +133,23 @@ const videoBottom = videocon.getBoundingClientRect().bottom;
 if(videoTop < 0 || videoBottom >= window.innerHeight ){
   
     video.play()
-    video.style.opacity = `0`
-    video.style.transition = `1.5s`
+    video.style.opacity = `0`;
+    video.style.transition = `1.5s`;
 
 }else{
-    video.style.opacity = `1`
-    video.style.transition = `1.5s`
+    video.style.opacity = `1`;
+    video.style.transition = `1.5s`;
 }
 
 
 }
-
-
 
 
 
 
 document.addEventListener("scroll", function () {
-    interact()
-    interact2()
-    interact3()
-    action()
+    interact();
+    interact2();
+    interact3();
+    action();
   })
