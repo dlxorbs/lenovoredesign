@@ -143,21 +143,11 @@ if(videoTop < 0 || videoBottom >= window.innerHeight ){
 }
 
 
-
 }
 
 
 
 
-
-
-interact()
-
-interact2()
-
-interact3()
-
-action()
 
 
 document.addEventListener("scroll", function () {
