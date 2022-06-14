@@ -37,8 +37,7 @@ strong{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-image: url(../Image/stick.png);
-    transition: 1s;
+
 
 
 }
@@ -49,7 +48,7 @@ strong{
    display: flex;   
     position: sticky;
     z-index: 1;
-    bottom: 0px;
+    bottom: -64px;
     height: 100vh;
     flex-direction: column;
 
