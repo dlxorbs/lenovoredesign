@@ -109,13 +109,6 @@ const videocon = info.querySelector(".infofirst");
 
 const videoTop = videocon.getBoundingClientRect().top;
 const videoBottom = videocon.getBoundingClientRect().bottom;
-// const videoMiddle = (videoTop-videoBottom)/2;
-// const windowHeight = window.innerHeight/2-videoMiddle;
-// const videoMiddle2 = (-videoTop+videoBottom)/2;
-// console.log(window.innerHeight/2)
-// console.log(windowHeight)
-
-// console.log(videoTop)
 
 if(videoTop < 0 || videoBottom >= window.innerHeight ){
   
@@ -134,7 +127,7 @@ if(videoTop < 0 || videoBottom >= window.innerHeight ){
 
 
 
-document.addEventListener("scroll", function () {
+info.addEventListener("scroll", function () {
     interact();
     interact2();
     interact3();
