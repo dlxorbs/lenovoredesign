@@ -4,12 +4,12 @@ const animationTags = info.querySelectorAll(".infohead , .detail , .infofirst ,.
 const L2RTags = info.querySelectorAll(".detail2, .infohead2")
 const R2LTags = info.querySelectorAll(".detail3, .infohead3")
 
-    let delay = 0.25;
+
 
 
 const interact = function(){
     
-
+    let delay = 0.25;
 
     animationTags.forEach(tag =>{
         const animationTop = tag.getBoundingClientRect().top;
@@ -40,6 +40,7 @@ const interact = function(){
 
 const interact2 = function(){
     
+    let delay = 0.1; 
 
     L2RTags.forEach(tag =>{
         const animationTop = tag.getBoundingClientRect().top;
@@ -70,7 +71,7 @@ const interact2 = function(){
 
 const interact3 = function(){
     
-
+    let delay = 0.1; 
 
     R2LTags.forEach(tag =>{
         const animationTop = tag.getBoundingClientRect().top;
@@ -108,6 +109,13 @@ const videocon = info.querySelector(".infofirst");
 
 const videoTop = videocon.getBoundingClientRect().top;
 const videoBottom = videocon.getBoundingClientRect().bottom;
+// const videoMiddle = (videoTop-videoBottom)/2;
+// const windowHeight = window.innerHeight/2-videoMiddle;
+// const videoMiddle2 = (-videoTop+videoBottom)/2;
+// console.log(window.innerHeight/2)
+// console.log(windowHeight)
+
+// console.log(videoTop)
 
 if(videoTop < 0 || videoBottom >= window.innerHeight ){
   
@@ -126,7 +134,7 @@ if(videoTop < 0 || videoBottom >= window.innerHeight ){
 
 
 
-info.addEventListener("scroll", function () {
+document.addEventListener("scroll", function () {
     interact();
     interact2();
     interact3();
