@@ -13,11 +13,11 @@ const changebg = function(){
 
         if( introBottom < 150){
         
-            windowTag.style.backgroundImage = "url(../기말/Image/stick2.png)";
+            windowTag.style.backgroundImage = "url(./Image/stick2.png)";
             windowTag.style.transition = "1s"
    
         }else{
-            windowTag.style.backgroundImage = "url(../기말/Image/stick.png)";
+            windowTag.style.backgroundImage = "url(./Image/stick.png)";
             windowTag.style.transition = "0.35s"
         }
 
